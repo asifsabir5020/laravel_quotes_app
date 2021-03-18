@@ -23,3 +23,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('quotes', [QuoteController::class, 'index']);
 Route::post('quotes', [QuoteController::class, 'store']);
+
+Route::post('/author', [AuthorController::class, 'create']);
